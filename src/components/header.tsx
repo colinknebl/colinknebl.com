@@ -1,37 +1,18 @@
-import { Link } from 'gatsby';
 import React from 'react';
+
+import { Navigation } from './navigation';
+import styled from 'styled-components';
 
 interface IHeaderProps {
     siteTitle: string;
 }
 
-const Header = ({ siteTitle }: IHeaderProps = { siteTitle: '' }) => (
-    <header
-        style={{
-            background: `rebeccapurple`,
-            marginBottom: `1.45rem`,
-        }}
-    >
-        <div
-            style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `1.45rem 1.0875rem`,
-            }}
-        >
-            <h1 style={{ margin: 0 }}>
-                <Link
-                    to='/'
-                    style={{
-                        color: `white`,
-                        textDecoration: `none`,
-                    }}
-                >
-                    {siteTitle}
-                </Link>
-            </h1>
-        </div>
-    </header>
+export const Header = ({ siteTitle }: IHeaderProps = { siteTitle: '' }) => (
+    <StyledHeader>
+        <Navigation />
+    </StyledHeader>
 );
 
-export default Header;
+const StyledHeader = styled.header`
+    margin: 0 0 1.45rem 0;
+`;

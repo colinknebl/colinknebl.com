@@ -8,43 +8,42 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from './header';
+import { Header } from './header';
+import { Footer } from './footer';
 import './layout.css';
+import styled from 'styled-components';
 
 interface ILayoutProps {
     children: JSX.Element[];
 }
 
 const Layout = ({ children }: ILayoutProps) => {
-    const data = useStaticQuery<Site.MetaDataQuery>(graphql`
-        query SiteTitleQuery {
+    const {
+        site: {
+            siteMetadata: { title, author },
+        },
+    } = useStaticQuery<Site.MetaDataQuery>(graphql`
+        query {
             site {
                 siteMetadata {
                     title
+                    author
                 }
             }
         }
     `);
 
     return (
-        <>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <div
-                style={{
-                    margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0 1.0875rem 1.45rem`,
-                }}
-            >
-                <main>{children}</main>
-                <footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href='https://www.gatsbyjs.org'>Gatsby</a>
-                </footer>
-            </div>
-        </>
+        <PageContainer>
+            <Header siteTitle={title} />
+            <main>{children}</main>
+            <Footer />
+        </PageContainer>
     );
 };
 
 export default Layout;
+
+const PageContainer = styled.div`
+    padding: 10px;
+`;

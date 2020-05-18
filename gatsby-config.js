@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-        author: `@gatsbyjs`,
+        title: `colinknebl.com`,
+        description: `Colin's Personal Web Playground.`,
+        author: `Colin Knebl`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -18,13 +18,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `colinknebl.com`,
+                short_name: `ColinK`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
+                background_color: `#333`,
+                theme_color: `#yellow`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
             },
         },
         `gatsby-plugin-styled-components`,
@@ -37,6 +37,14 @@ module.exports = {
             },
         },
         `gatsby-transformer-json`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `pages`,
+                path: `${__dirname}/src/pages/`,
+            },
+        },
+        `gatsby-plugin-mdx`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

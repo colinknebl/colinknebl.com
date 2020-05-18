@@ -1,21 +1,71 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { PageProps, graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
+//#region PageQuery
+interface IndexPageQueryResult {
+    allDescriptorsJson: {
+        nodes: Site.Descriptor[];
+    };
+    site: {
+        siteMetadata: {
+            author: string;
+        };
+    };
+}
+export const IndexPageQuery = graphql`
+    query AllDescriptors {
+        allDescriptorsJson {
+            nodes {
+                value
+            }
+        }
+        site {
+            siteMetadata {
+                author
+            }
+        }
+    }
+`;
+//#endregion PageQuery
+
+const IndexPage = (props: PageProps<IndexPageQueryResult>) => (
     <Layout>
         <SEO title='Home' />
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-            <Image />
-        </div>
-        <Link to='/page-2/'>Go to page 2</Link>
+        <h1>{props.data.site.siteMetadata.author}</h1>
+        <DescriptorsList descriptors={props.data.allDescriptorsJson.nodes} />
     </Layout>
 );
 
 export default IndexPage;
+
+//#region DescriptorsList
+function DescriptorsList({ descriptors }: { descriptors: Site.Descriptor[] }) {
+    return (
+        <StyledDescriptorsList>
+            {descriptors.map(({ value }) => {
+                return <li key={value}>{value}</li>;
+            })}
+        </StyledDescriptorsList>
+    );
+}
+
+const StyledDescriptorsList = styled.ul`
+    list-style-type: none;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        line-height: 1.8;
+        font-size: 1.8rem;
+
+        &:not(:last-of-type):after {
+            content: '|';
+            margin: 0 20px;
+        }
+    }
+`;
+//#endregion DescriptorsList
