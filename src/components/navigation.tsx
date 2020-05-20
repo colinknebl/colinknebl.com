@@ -21,6 +21,10 @@ const links: NavLink[] = [
         to: '/skills',
     },
     {
+        name: 'work',
+        to: '/work',
+    },
+    {
         name: 'education',
         to: '/education',
     },
@@ -86,7 +90,6 @@ const StyledNavigation = styled.nav`
 
     .link {
         text-decoration: none;
-        padding: 10px;
         color: var(--secondary-color);
 
         &.active {

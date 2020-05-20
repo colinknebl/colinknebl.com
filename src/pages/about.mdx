@@ -1,6 +1,14 @@
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-export default Layout;
+export default ({ children }) => {
+    return (
+        <Layout>
+            <SEO title='About' />
+            {children}
+        </Layout>
+    );
+};
 
 # About
 
@@ -10,4 +18,7 @@ I am a Software Engineer with a passion for software development.
 My current language of choice is TypeScript, and am starting to
 dive more into Rust.
 
-I live and work in West Michigan with my wife and three kids.
+I live and work in West Michigan with my wife and three kids. I enjoy
+spending time with my family and friends (but who doesn't), a good
+podcast (Syntax.fm and Software Engineering Daily are a couple of my
+favorites), and exercising (no seriously).

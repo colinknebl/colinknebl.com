@@ -1,6 +1,14 @@
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-export default Layout;
+export default ({ children }) => {
+    return (
+        <Layout>
+            <SEO title='Social' />
+            {children}
+        </Layout>
+    );
+};
 
 # Social
 

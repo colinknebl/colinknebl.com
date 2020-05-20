@@ -1,0 +1,129 @@
+[
+    {
+        "title": "Software Developer",
+        "company": "2020 Technologies",
+        "time": {
+            "from": "2018",
+            "to": "Present"
+        },
+        "partTime": false,
+        "description": "As a member of the Front-End Web Team, design, implement, test, and maintain software programs. Perform code reviews for other members of the team. Prioritize bugs/features based on severity and priority levels. Identify areas for modification in existing programs and subsequently developing these modifications. Working closely with other developers, UX/UI designers, business and systems analysts. Evaluate and assess the viability of new and emerging technologies, and how/if they could be incorporated into the code base.",
+        "duties": [
+            "Predominant tech used: TypeScript, React, Webpack, Backbone, HTML, CSS, Microsoft Azure, Grunt, RequireJS"
+        ]
+    },
+    {
+        "title": "System Administrator",
+        "company": "Michigan Air National Guard",
+        "time": {
+            "from": "2017",
+            "to": "Present"
+        },
+        "partTime": true,
+        "description": "Supervision and administration of cyber communications and Command and Control (C2) systems, including computer networks, servers, databases, and applications. Responsibilities include system integration and maintenance, addressing interruptions to service, and ensuring systems are protected from outside threats.",
+        "duties": null
+    },
+    {
+        "title": "Software Implementation Specialist",
+        "company": "York Worldwide Technologies",
+        "time": {
+            "from": "Sep 2017",
+            "to": "Dec 2017"
+        },
+        "partTime": false,
+        "description": "Implement custom Electronic Data Interchange (EDI) software packages for new and existing customers. Manage multiple software implementation projects ensuring timeline and budgets are met. Work regularly with customers to ensure a smooth rollout of the software as well as maintaining an ongoing relationship to ensure the software is working to the customer's satisfaction. Make appropriate modifications and customize the software to fit the client needs.",
+        "duties": null
+    },
+    {
+        "title": "Technical Associate",
+        "company": "SCS Global Services",
+        "time": {
+            "from": "Mar 2017",
+            "to": "Sep 2017"
+        },
+        "partTime": false,
+        "description": "The Technical Associate is a program auditor whom critically assesses furniture and building products against sustainability standards to achieve industry recognized certifications like BIFMA level®, SCS Indoor Air Advantage™ and Indoor Air Advantage™ Gold. Program certification allows companies to leverage their certified products in the market and confirm compliance to green building criteria such as USGBC - LEED, CHPS, CalGreen and various Government Purchasing Specifications. The Technical Associate actively supports the Program Manager in completing client billable work, performing onsite assessments, ongoing program development, ensuring conformance with corporate and program quality control requirements, and other tasks as assigned.",
+        "duties": [
+            "Coordinate and conduct both onsite and desk audits for both domestic and international clients as assigned.",
+            "Complete clearly written audit reports following program requirements.",
+            "Communicate professionally with peers, clients, consultants and managers.",
+            "Support quality control activities such as technical report reviews and program document control.",
+            "Document and track client conformance issues; internal and external accreditation audits.",
+            "Develop and maintain a strong working knowledge of the standards relevant to certification programs."
+        ]
+    },
+    {
+        "title": "Operations Supervisor",
+        "company": "Jons To Go Portable Restroom Service",
+        "time": {
+            "from": "Mar 2016",
+            "to": "Mar 2017"
+        },
+        "partTime": false,
+        "description": "Direct and coordinate logistics operations concerned with the distribution and retrieval of products. Monitors inventory to ensure orders can be fulfilled. Plans and directs over 30 truck routes maximizing efficiency and timeliness. Coordinates with other department managers in regard to orders, billing, event planning, etc. Generates and reviews financial statements, activity reports, and other performance data to measure productivity, goal achievement, and to identify areas needing cost reduction or program improvement.",
+        "duties": [
+            "Prepares staff work schedules, assigns specific duties, sets productivity goals, and staff provides feedback.",
+            "Performs audits on items including billing and route performance.",
+            "Maintained several databases relating to inventory management.",
+            "Confers with customers by telephone or in person to provide information about services, take or enter orders, cancel accounts, and obtain details of complaints.",
+            "Keeps records of customer interactions and transactions, recording details of inquiries, complaints, or comments, as well as actions taken.",
+            "Resolves customers' service or billing complaints by performing activities such as exchanging unit delivered, scheduling additional cleanings, refunding money, or adjusting bills.",
+            "Manage the movement of units into and out of holding facilities to ensure efficiency, effectiveness, and sustainability of operations.",
+            "Establish and implement departmental policies, goals, objectives, and procedures.",
+            "Perform personnel functions such as training and evaluation.",
+            "Oversees customer billing company wide."
+        ]
+    },
+    {
+        "title": "Information Technology/Administration Office Manager",
+        "company": "United States Air Force",
+        "time": {
+            "from": "Aug 2014",
+            "to": "Mar 2016"
+        },
+        "partTime": false,
+        "description": "Maintained employment records related to events such as hiring, termination, leaves, transfers, or promotions. Maintained and updated HR documents including: organizational charts, employee directories, and performance evaluation forms. Managed electronic resources for over 70 personnel (i.e. computers, laptops, desk and mobile phones).",
+        "duties": [
+            "Developed and drafted policies for Administration and Information Technology office.",
+            "Managed documents and records of 70+ employees, and 60+ computer work stations.",
+            "Managed Information Technology department; implemented work order tracking program.",
+            "Coordinated with multiple outside agencies to resolve work orders & schedule maintenance.",
+            "Facilitated safety, environmental, and inspection documentation review and update.",
+            "Coordinated the privileging process regarding appointment and re-appointment of privileges to multiple base level software applications.",
+            "Managed multiple databases with Microsoft excel and access.",
+            "Processed performance reports, decorations, retirements, military separation documents, and other official memoranda for leadership review; prepared reports for weekly meetings.",
+            "Won employee of the quarter (2015 first quarter) out of 141 employees."
+        ]
+    },
+    {
+        "title": "Fuels Operations Supervisor/Accountant",
+        "company": "United States Air Force",
+        "time": {
+            "from": "Sep 2012",
+            "to": "Aug 2014"
+        },
+        "partTime": false,
+        "description": "Coordinated delivery of jet fuel to 59 aircraft. Conducted audits of fuel accounts, and validated transactions. Maintained fuel and cryogenic documentation, and ensured received product met specifications.",
+        "duties": [
+            "Managed over 20 distribution operators/17 vehicles ensuring timelines were met; ensured all employees followed federal, state, and local safety and environmental standards.",
+            "Maintained fuel inventory of the base fuel account valued at over $6 million.",
+            "Coordinated collection of operational fuel data; ensured accuracy and completeness",
+            "Analyzed fuel data - identified trends and made operational recommendations.",
+            "Maintained fuel transaction and customer database."
+        ]
+    },
+    {
+        "title": "Fuels Distribution Operator",
+        "company": "United States Air Force",
+        "time": {
+            "from": "Mar 2010",
+            "to": "Aug 2012"
+        },
+        "partTime": false,
+        "description": "Inspected, operated, and maintained 19 fueling vehicles. Issued jet fuel to Department of Defense customers, and completed accounting documentation. Complied with and enforced safety standards, environmental regulations, and applicable workforce fuel handling publications.",
+        "duties": [
+            "Trained new employees on job task knowledge.",
+            "Delivered fuel to all Department of Defense customers."
+        ]
+    }
+]

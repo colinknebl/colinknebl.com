@@ -18,24 +18,9 @@ interface ILayoutProps {
 }
 
 const Layout = ({ children }: ILayoutProps) => {
-    const {
-        site: {
-            siteMetadata: { title, author },
-        },
-    } = useStaticQuery<Site.MetaDataQuery>(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                    author
-                }
-            }
-        }
-    `);
-
     return (
         <PageContainer>
-            <Header siteTitle={title} />
+            <Header />
             <main>{children}</main>
             <Footer />
         </PageContainer>

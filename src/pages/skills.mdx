@@ -1,6 +1,14 @@
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-export default Layout;
+export default ({ children }) => {
+    return (
+        <Layout>
+            <SEO title='Skills' />
+            {children}
+        </Layout>
+    );
+};
 
 # Skills
 
@@ -12,14 +20,34 @@ export default Layout;
 4. HTML
 5. CSS / Less
 
-## DevOps
+## Frameworks/Libraries
+
+1. React
+2. Angular
+3. Jest
+4. Gatsby
+5. NextJS
+6. Ionic
+7. Backbone
+
+## Tools
 
 1. Webpack
-2. AWS (VPC, EC2, S3, Route53)
+2. Grunt
+3. Git
+4. GitHub
+5. Team Foundation Server (TFS)
+6. Docker
+
+## DevOps
+
+1. Microsoft Azure
+2. Amazon Web Services (AWS) - VPC, EC2, S3, Route53
 3. Netlify
 4. Heroku
-5. Grunt
+5. Now (by Zeit)
 
 ## Process
 
 1. Agile
+2. Scrum

@@ -1,0 +1,20 @@
+[
+    {
+        "degree": "M.S.",
+        "program": "Software Development",
+        "yearCompleted": "2020",
+        "universityName": "Maryville University"
+    },
+    {
+        "degree": "B.S.",
+        "program": "Health and Wellness",
+        "yearCompleted": "2015",
+        "universityName": "Kaplan University"
+    },
+    {
+        "degree": "A.A.S.",
+        "program": "Logistics",
+        "yearCompleted": "2015",
+        "universityName": "Community College of the Air Force"
+    }
+]

@@ -1,44 +1,21 @@
 import React from 'react';
-import { PageProps, graphql } from 'gatsby';
+import { PageProps, graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-//#region PageQuery
-interface IndexPageQueryResult {
-    allDescriptorsJson: {
-        nodes: Site.Descriptor[];
-    };
-    site: {
-        siteMetadata: {
-            author: string;
-        };
-    };
-}
-export const IndexPageQuery = graphql`
-    query AllDescriptors {
-        allDescriptorsJson {
-            nodes {
-                value
-            }
-        }
-        site {
-            siteMetadata {
-                author
-            }
-        }
-    }
-`;
-//#endregion PageQuery
-
-const IndexPage = (props: PageProps<IndexPageQueryResult>) => (
-    <Layout>
-        <SEO title='Home' />
-        <h1>{props.data.site.siteMetadata.author}</h1>
-        <DescriptorsList descriptors={props.data.allDescriptorsJson.nodes} />
-    </Layout>
-);
+const IndexPage = (props: PageProps<IndexPageQueryResult>) => {
+    return (
+        <Layout>
+            <SEO title='Home' />
+            <h1>{props.data.site.siteMetadata.author}</h1>
+            <DescriptorsList
+                descriptors={props.data.allDescriptorsJson.nodes}
+            />
+        </Layout>
+    );
+};
 
 export default IndexPage;
 
@@ -69,3 +46,30 @@ const StyledDescriptorsList = styled.ul`
     }
 `;
 //#endregion DescriptorsList
+
+//#region PageQuery
+interface IndexPageQueryResult {
+    allDescriptorsJson: {
+        nodes: Site.Descriptor[];
+    };
+    site: {
+        siteMetadata: {
+            author: string;
+        };
+    };
+}
+export const query = graphql`
+    query {
+        allDescriptorsJson {
+            nodes {
+                value
+            }
+        }
+        site {
+            siteMetadata {
+                author
+            }
+        }
+    }
+`;
+//#endregion PageQuery
