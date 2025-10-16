@@ -30,9 +30,9 @@
         "company": "Michigan Air National Guard",
         "time": {
             "from": "2017",
-            "to": "Present"
+            "to": "2022"
         },
-        "partTime": true,
+        "partTime": false,
         "description": "Supervision and administration of cyber communications and Command and Control (C2) systems, including computer networks, servers, databases, and applications. Responsibilities include system integration and maintenance, addressing interruptions to service, and ensuring systems are protected from outside threats.",
         "duties": null
     },
