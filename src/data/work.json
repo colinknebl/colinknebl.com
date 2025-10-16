@@ -1,10 +1,23 @@
 [
     {
         "title": "Software Developer",
+        "company": "Navigator Truck Insurance Agency",
+        "time": {
+            "from": "2020",
+            "to": "Present"
+        },
+        "partTime": false,
+        "description": "A full-stack developer responsible for all aspects on the development team, with a primary focus on back-end API development and database management. Designed and built systems for downloading large datasets from the internet and saving data to a database. Implemented complex algorithims for calculating the Federal Motor Carrier Safety Administration (FMCSA) Safety Measurement System (SMS) scoring methodology. Tuned database queries for performance and scalability. Develop and maintain DevOps pipelines for continuous integration and deployment.",
+        "duties": [
+            "Predominant tech used: Go, SQL (MySQL and PostgreSQL), TypeScript, React, CSS (Tailwind), Microsoft Azure"
+        ]
+    },
+    {
+        "title": "Software Developer",
         "company": "2020 Technologies",
         "time": {
             "from": "2018",
-            "to": "Present"
+            "to": "2020"
         },
         "partTime": false,
         "description": "As a member of the Front-End Web Team, design, implement, test, and maintain software programs. Perform code reviews for other members of the team. Prioritize bugs/features based on severity and priority levels. Identify areas for modification in existing programs and subsequently developing these modifications. Working closely with other developers, UX/UI designers, business and systems analysts. Evaluate and assess the viability of new and emerging technologies, and how/if they could be incorporated into the code base.",
