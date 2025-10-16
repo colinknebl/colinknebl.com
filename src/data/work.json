@@ -7,7 +7,7 @@
             "to": "Present"
         },
         "partTime": false,
-        "description": "A full-stack developer responsible for all aspects on the development team, with a primary focus on back-end API development and database management. Designed and built systems for downloading large datasets from the internet and saving data to a database. Implemented complex algorithims for calculating the Federal Motor Carrier Safety Administration (FMCSA) Safety Measurement System (SMS) scoring methodology. Tuned database queries for performance and scalability. Develop and maintain DevOps pipelines for continuous integration and deployment.",
+        "description": "A full-stack developer responsible for all aspects of development, with a primary focus on back-end API development and database management. Designed and built systems for downloading large datasets from the internet and saving data to a database. Implemented complex algorithims for calculating the Federal Motor Carrier Safety Administration (FMCSA) Safety Measurement System (SMS) scoring methodology. Tuned database queries for performance and scalability. Develop and maintain DevOps pipelines for continuous integration and deployment.",
         "duties": [
             "Predominant tech used: Go, SQL (MySQL and PostgreSQL), TypeScript, React, CSS (Tailwind), Microsoft Azure"
         ]

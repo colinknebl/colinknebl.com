@@ -32,10 +32,6 @@ const links: NavLink[] = [
         name: 'social',
         to: '/social',
     },
-    {
-        name: 'uses',
-        to: '/uses',
-    },
 ];
 
 export function Navigation() {
